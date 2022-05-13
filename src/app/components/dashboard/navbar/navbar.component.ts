@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from 'src/app/services/menu.service';
+import { Menu } from 'src/app/interfaces/menu';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,7 @@ import { MenuService } from 'src/app/services/menu.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  menu: Menu[]=[];
 
   constructor(private _menuService: MenuService) { }
 
@@ -16,7 +19,7 @@ export class NavbarComponent implements OnInit {
 
   cargarMenu(){
     this._menuService.getMenu().subscribe(data => {
-      console.log(data);
+      this.menu = data;
     })
   }
 
