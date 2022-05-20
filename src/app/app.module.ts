@@ -9,6 +9,7 @@ import { SharedModule } from './components/shared/shared.module';
 
 //componentes
 import { LoginComponent } from './components/login/login.component';
+import { UsuarioService } from './services/usuario.service';
 
 
 
@@ -26,7 +27,7 @@ import { LoginComponent } from './components/login/login.component';
     SharedModule
    
   ],
-  providers: [],
+  providers: [UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
