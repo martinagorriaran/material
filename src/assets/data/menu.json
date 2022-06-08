@@ -1,16 +1,26 @@
 
 [
     {
-        "nombre":"Dashboard",
+        "nombre":"Inicio",
         "redirect":"/dashboard"
     },
     {
-        "nombre":"Usuarios",
+        "nombre":"Cuentas",
         "redirect":"/dashboard/usuarios"
     },
     {
-        "nombre":"Reportes",
+        "nombre":"Tarjetas",
         "redirect":"/dashboard/reportes"
+    },
+    {
+        "nombre":"Inversiones",
+        "redirect":"/dashboard/inversiones"
+    },
+    {
+        "nombre":"Pagos y Transferencias",
+        "redirect":"/dashboard/pagos"
     }
+    
+    
     
 ]
